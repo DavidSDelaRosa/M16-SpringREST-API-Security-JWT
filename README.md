@@ -11,8 +11,11 @@ Segunda fase: Persistencia de datos en MongoDb
 Tercera fase: MongoDb y seguridad JWT a todos los endpoints de la API
 
 3 maneras de conseguir los JWT:
+
   -como admin ("admin"/"admin")
+  
   -como usuario ("user"/"user")
+  
   -como anonimo ("anonymous"/"anonymous")
   
   
