@@ -1,7 +1,7 @@
 # M16-SpringREST-API-Security-JWT
 Modulo 16 ITAcademy Backend Java con Spring
 
-Se trata de un juego con dos dados. Cada vez que se realiza la llamada adecuada a la API (se necesita autorización en la última fase), la respuesta será el resultado del 
+Se trata de un juego con dos dados. Cada vez que se realiza el request adecuado (POST) a la API (se necesita autorización en la última fase), la respuesta será el resultado del 
 lanzamiento aleatorio de dos dados. Si ambos suman 7, es victoria; si no, pérdida. 
 
 Primera fase:  Persistencia de datos en MySql
@@ -10,7 +10,7 @@ Segunda fase: Persistencia de datos en MongoDb
 
 Tercera fase: MongoDb y seguridad JWT a todos los endpoints de la API
 
-3 maneras de conseguir los twt:
+3 maneras de conseguir los JWT:
   -como admin ("admin"/"admin")
   -como usuario ("user"/"user")
   -como anonimo ("anonymous"/"anonymous")
@@ -20,7 +20,7 @@ Tercera fase: MongoDb y seguridad JWT a todos los endpoints de la API
 
 Tuve problemas con este error: java.lang.NoClassDefFoundError: Could not initialize class javax.xml.bind.DatatypeConverterImpl
 
-Era debido a usar Java11, tuve que añadir esta dependencia al pom la dependencia:
+Era debido a usar Java11, tuve que añadir esta dependencia al pom:
 
     <groupId>javax.xml.bind</groupId> 
     <artifactId>jaxb-api</artifactId>
